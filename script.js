@@ -1,10 +1,9 @@
 const Lanches = [
-    {Id: "tudo", nome: "X-tudo", Preço: 24.99 },
-    {Id: "gaucho", nome: "X-gaúcho", Preço: 23.99 },
-    {Id: "salada", nome: "X-salada", Preço: 23.99 },
-    {Id: "bacon", nome: "x-bacon", Preço: 23.99 },
-    {Id:"frango", nome: "X-frango", Preço: 23.99 },
-    {Id: "pedrao", nome: "x-pedrao", Preço: 29.99 },
+    {Id: "tudo", nome: "X-tudo", Preço: 27.99 },
+    {Id: "gaucho", nome: "X-gaúcho", Preço: 29.99 },
+    {Id: "salada", nome: "X-salada", Preço: 24.99 },
+    {Id:"egg", nome: "X-egg", Preço: 27.99 },
+    {Id: "bacon", nome: "x-tudo", Preço: 27.99 }
 ];
 
 
