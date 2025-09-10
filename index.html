@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="logo" src="imagens/x-pedrao1.png" alt="">
+    <br>
+
+ <label>Nome: <input type="text" id="nome"></label>
+    <br>
+    <label for="telefone_cliente">E-mail:</label>
+    <input type="text" name="e-mail_cliente" id="e-mail_cliente" placeholder="E-mail">
+    <br>
+    <label for="numero_cliente">Número:</label>
+    <input type="number" name="numero_cliente" id="numero">
+    <br>
+    <label for="opçoes_cardapiolanches">Lanches:</label>
+<select name="cores">
+    <option value="X-tudo">X-tudo /R$24.99 </option>
+    <option value="X-gaúcho">X-gaúcho /R$ 23.99/ </option>
+    <option value="X-salada">X-salada /R$ 23.99/</option> 
+    <option value="X-bacon">X-bacon /R$ 23.99/</option>
+    <option value="X-frango">X-frango /R$ 23.99/</option>
+    <option value="X-pedrao">❗X-pedrao❗/R$ 29.99/</option>
+</select>
+    <br>
+    <label for="opçoes_cardapiobebidas">Bebidas:</label>
+<select name="Nomes">
+    <option value="Coca-Zero">Coca-Zero 350ml /R$ 4.99/</option>
+    <option value="Coca-Cola">Coca-Cola 350ml /R$ 4.99/ </option>
+    <option value="Guaraná">Guaraná 350ml /R$ 4.99/</option>
+    <option value="Pepsi">Pepsi 350ml /R$ 4.99/</option>
+    <option value="Fanta">Fanta 350ml /R$ 4.99/</option>
+    
+    <option value="Heineken">Heineken 350ml /R$ 5,49/</option>
+    <option value="Budweiser">Budweiser 350ml /R$ 5,19/</option>
+    <option value="Skol">Skol 350ml /R$ 5,49/</option>
+    <option value="Original">Original /R$ 5,39 R$/</option>
+    
+    <option value="JARRA-Suco Uva">Suco Uva 850ml /R$ 11,49/</option>
+    <option value="JARRA-Suco Laranja">Suco de Laranja 850ml /R$ 11,49/</option>
+    <option value="JARRA-Suco Abacaxi-Hortelã">Abacaxi-Hortelã 850ml /R$ 11,49/</option>
+    <option value="Àgua">Àgua Mineral /R$ 2,39 R$/</option>
+    <option value="Àgua">Àgua Mineral com gas /R$ 2,39 R$/</option>
+</select>
+    <br>
+    <h1> ❗​INFORMAÇÕES IMPORTANTES❗​ </h1>
+    <br>
+    Endereço do estabelecimento = <input type="text" name="endereço"
+        value="📍​ R. Quintino Bocaiúva, 1088 - Centro, Foz do Iguaçu - PR, 85851-130 📍​" readonly>
+    <br>
+    Telefone do estabelecimento = <input type="text" name="telefone" value=" 📲​(45) 3025-3978" readonly>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
