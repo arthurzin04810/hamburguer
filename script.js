@@ -19,8 +19,11 @@ const Bebidas = [
 function preencheOption(){
 const selectLanche = document.getElementById("transporte")
 
-
+const relatorioHTML =`
+         `;  
+          document.getElementById("relatorio").innerHTML = relatorioHTML;
 }
+
 
 
 preencheOption();
