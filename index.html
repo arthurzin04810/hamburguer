@@ -20,45 +20,15 @@
     <label>Endereço: <input type="text" id="endereço"></label>
     <br>
     <label for="numero_cliente">Número:</label>
-    <input type="number" name="numero_cliente" id="numero">
+    <input type="number" name="numero_cliente" id="numero" placeholder="+55">
     <br>
-    <label for="forma_pagamento">Forma de pagamento:</label>
-<select name="pagamento">
-    <option value="cartão de débito">Cartão de débito</option>
-    <option value="cartão de credito">Cartão de crédito</option>
-    <option value="em dinheiro">Notas</option>
-    <option value="Pix">Pix</option>
-</select>
+   <label>Lanches:
+      <select id="lanches"></select>
+    </label>
     <br>
-    <label for="opçoes_cardapiolanches">Lanches:</label>
-<select name="cores">
-    <option value="X-tudo">X-tudo /R$24.99 </option>
-    <option value="X-gaúcho">X-gaúcho /R$ 23.99/ </option>
-    <option value="X-salada">X-salada /R$ 23.99/</option> 
-    <option value="X-bacon">X-bacon /R$ 23.99/</option>
-    <option value="X-frango">X-frango /R$ 23.99/</option>
-    <option value="X-pedrao">❗X-pedrao❗/R$ 29.99/</option>
-</select>
-    <br>
-    <label for="opçoes_cardapiobebidas">Bebidas:</label>
-<select name="sabores">
-    <option value="Coca-Zero">Coca-Zero 350ml /R$ 4.99/</option>
-    <option value="Coca-Cola">Coca-Cola 350ml /R$ 4.99/ </option>
-    <option value="Guaraná">Guaraná 350ml /R$ 4.99/</option>
-    <option value="Pepsi">Pepsi 350ml /R$ 4.99/</option>
-    <option value="Fanta">Fanta 350ml /R$ 4.99/</option>
- 
-    <option value="Heineken">Heineken 350ml /R$ 5,49/</option>
-    <option value="Budweiser">Budweiser 350ml /R$ 5,19/</option>
-    <option value="Skol">Skol 350ml /R$ 5,49/</option>
-    <option value="Original">Original /R$ 5,39 R$/</option>
-    
-    <option value="JARRA-Suco Uva">Suco Uva 850ml /R$ 11,49/</option>
-    <option value="JARRA-Suco Laranja">Suco de Laranja 850ml /R$ 11,49/</option>
-    <option value="JARRA-Suco Abacaxi-Hortelã">Abacaxi-Hortelã 850ml /R$ 11,49/</option>
-    <option value="Àgua">Àgua Mineral /R$ 2,39 R$/</option>
-    <option value="Àgua">Àgua Mineral com gas /R$ 2,39 R$/</option>
-</select>
+    <label>Bebidas:
+      <select id="Bebidas"></select>
+    </label><br><br>
     <br>
     <h1> ❗​INFORMAÇÕES IMPORTANTES❗​ </h1>
     <br>
@@ -69,10 +39,12 @@
     <br>
     <h1>⬇️​FINALIZAR PAGAMENTO⬇️​</h1>
     <br>
-     
+    <button type="button" onclick="gerarRelatorio()">Gerar Relatório</button>
+    </form>
     <div id="relatorio"></div>
     <br>
-    <button onclick="window.print()">Gerar PDF do relatório</button>
+    <button onclick="window.print()">Gerar PDF do Relatório</button>
+
         <br>
         <br>
         <br>
@@ -130,7 +102,7 @@
           <br>
         <br>
         <br>
-        <p2>-Suco de Uva:</p2>
+        <p2>-Suco de laranja:</p2>
         <br>
         <br>
 <img id="comida" src="imagens/suco de laranja.png" alt=""width="300" height="300">
@@ -159,179 +131,8 @@
         <br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="script.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 </body>
 
 </html>
