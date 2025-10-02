@@ -1,29 +1,53 @@
 const lanches = [
-    {Id: "X-tudo", nome: "X-tudo", Preço: 27.99 },
-    {Id: "X-gaÚcho", nome: "X-gaúcho", Preço: 29.99 },
-    {Id: "X-salada", nome: "X-salada", Preço: 24.99 },
-    {Id:"x-pedrao", nome: "X-pdrao", Preço: 27.99 },
-    {Id: "X-bacon", nome: "X-pedrao", Preço: 27.99 }
+  { id: "x_gaucho", nome: "X-Gaúcho / preço: 29.99", preco: 29.99 },
+  { id: "x-gaucho", nome: "X-Salada / preço: 24.99", preco: 24.99 },
+  { id: "x_pedrao", nome: "X-Pedrão / preço: 27.99", preco: 27.99 }
+];
+
+const bebidas = [
+  { id: "hostel", nome: "Hostel", precoDiaria: 90 },
+  { id: "hotel3", nome: "Hotel 3⭐", precoDiaria: 160 },
+  { id: "hotel5", nome: "Hotel 5⭐", precoDiaria: 320 }
+
+
+
+
+
 ];
 
 
-const Bebidas = [
-    {Id: "suco de uva", nome: "suco de uva", Preço: 10.00 },
-    {Id: "suco de laranja", nome: "suco de laranja", Preço: 11.99 },
-    {Id: "maracujá", nome: "suco e maracujá", Preço: 12.99 },
-    {Id:"suco de abacaxi com hortelã", nome: "suco de abacaxi com hortelã", Preço: 10.99 },
-    {Id: "heineken", nome: "heineken", Preço: 15.99 }
-];
 
 
-function preencheOption(){
-const selectLanche = document.getElementById("transporte")
+// Preencher os selects com base nos vetores
+function preencherOpcoes() {
+  // 1) TRANSPORTE
+  const  selectlanches= document.getElementById("lanches");
+  for (let i = 0; i < lanches.length; i++) {
+    const item = lanches[i];                 // pega o objeto atual do array
+    const option = document.createElement("option"); // cria uma <option>
+    option.value = item.id;                      // valor interno (ex.: "aviao")
+    option.textContent = item.nome;              // texto visível (ex.: "Avião")
+    selectlanches.appendChild(option);        // coloca no <select>
+  }
 
-const relatorioHTML =`
-         `;  
-          document.getElementById("relatorio").innerHTML = relatorioHTML;
+  // 2) HOSPEDAGEM
+  const selectbebidas = document.getElementById("bebidas");
+  for (let i = 0; i < bebidas.length; i++) {
+    const item = bebidas[i];
+    const option = document.createElement("option");
+    option.value = item.id;
+    option.textContent = item.nome;
+    selectbebidas.appendChild(option);
+  }
+
 }
 
-
-
-preencheOption();
+function procurarPorId(lista, idProcurado) {
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i].id === idProcurado) {
+      return lista[i]; // devolve o objeto encontrado
+    }
+  }
+  return null; // se não encontrou, devolve nulo
+}
+preencherOpcoes();
